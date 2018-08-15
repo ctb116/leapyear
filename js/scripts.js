@@ -1,15 +1,15 @@
 $(document).ready(function(){
   $("form#leap-year").submit(function(event){
   event.preventDefault();
-
   var year = parseInt($("input#year").val());
   var result = leapyear(year);
-
   $("#result").text(result);
 
   });
 var leapyear = function(year) {
-  if (year % 4 === 0) {
+  if (year % 100 === 0) {
+    return false;
+  } else if (year % 4 === 0) {
     return true;
   } else {
     return false;
