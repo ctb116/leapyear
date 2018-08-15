@@ -3,14 +3,15 @@ $(document).ready(function(){
   event.preventDefault();
 
   var year = parseInt($("input#year").val());
-  // var result = leapyear(year);
+  var result = leapyear(year);
 
-  $("#result").text(year);
-
-
-
-
+  $("#result").text(result);
 
   });
+var leapyear = function(year) {
+  return false;
+}
+
+
 
 });
